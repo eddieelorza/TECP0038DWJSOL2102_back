@@ -44,7 +44,7 @@ router.post('/signup', async (req, res) => {
         lastname: body.lastname,
         email: body.email,
         password: body.password,
-        type: 'client',
+        type: body.type,
     })
 
     // Saving user
